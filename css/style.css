@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Stint+Ultra+Condensed&display=swap');
+
+.logo-font{
+    font-family: 'Kaushan Script', cursive;
+}
+
+.log-bg{
+    background-color: #f2f5f5;
+}
+
+.nav-link div ul{
+    display: none;
+    position: absolute;
+}
+
+.nav-link div:hover ul{
+    display: block;
+}
+
+.logo{
+    width: 300px;
+}
+
+.log-in{
+    display: flex;
+    background-color: #f2f5f5;
+    position: absolute;
+    top: 15vh;
+    left: 25vw;
+    padding: 70px;
+    border-radius: 10px;
+}
+
+.container1{
+    padding-top: 70px;
+    margin-right: 40px;
+}
+
+.container2{
+    max-width: 330px;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px #c1baba;
+}
+
+#title{
+    background-color: #ffffff;
+    padding-bottom: 20px;
+}
+
+.form-content{
+    background-color: #ffffff;
+    padding-bottom: 10px;
+}
+
+.inp{
+    width: 300px;
+    height: 20px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+.inp:focus,.con-inp:focus{
+    border: none;
+    outline: gainsboro solid 2px;
+}
+
+.forget-password{
+    background-color: #ffffff;
+    color: black;
+}
+.sub-btn{
+    width: 150px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.no-acc{
+    margin: 2px;
+}
+
+.sign-up{
+    width: 150px;
+    padding: 5px 50px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(254 55 55);
+    border-radius: 5px;
+}
+
+.sign-up:hover{
+    background-color: red;
+}
+
+.nth:nth-child(even){
+    background-color: #ececec;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Contact Us</title>
+</head>
+<body>
+    <!-- nav-bar -->
+    <div class="flex justify-between py-6 mx-20">
+        <div class="mx-20">
+            <a href="index.html" class="text-4xl font-bold logo-font">TheSubMish.io</a>
+        </div>
+        <div class="flex mx-20 nav-link">
+            <div class="mx-6"><a href="index.html" class="text-xl font-bold">Home</a></div>
+            <div class="mx-6"><a href="about.html" class="text-xl font-bold">About</a></div>
+            <div class="mx-6"><a href="#" class="text-xl font-bold">Team</a>
+                <ul>
+                    <li class="text-xl font-bold py-1"><a href="team1.html">Team 1</a></li>
+                    <li class="text-xl font-bold py-1"><a href="team2.html">Team 2</a></li>
+                </ul>
+            </div>
+            <div class="mx-6"><a href="contact.html" class="text-xl font-bold border-b-2 border-black">Contact</a></div>
+            <div class="mx-6"><a href="sign.html" class="text-xl font-bold">Join Us</a></div>
+        </div>
+    </div>
+    <!-- main body  -->
+    <div class="my-60 mx-40 flex">
+        <div class="mb-10 lg:w-1/2 xl:my-10 xl:mr-20">
+            <h1 class="text-4xl text-gray-500 font-bold">Get In Touch</h1>
+            <p class="text-justify my-2 pr-28">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque aspernatur libero asperiores quibusdam totam fuga nam, odit nulla laudantium illo!</p>
+        </div>
+        <div>
+            <img src="image/about.png" alt="image" class="w-96">
+        </div>
+    </div>
+    <div class="my-48 mx-96">
+        <div class="my-5">
+            <h1 class="text-4xl text-gray-500 font-bold">Let's have a talk</h1>
+        </div>
+        <form action="#" method="post" onsubmit="return conValid()">
+            <div class="flex">
+                <div class="mr-4 flex-auto">
+                    <input type="text" name="fname" id="fname" placeholder="First Name" class="border border-black rounded p-2 mb-3 w-full sm:w-full con-inp">
+                </div>
+                <div class="flex-auto">
+                    <input type="text" name="lname" id="lname" placeholder="Last Name" class="border border-black rounded p-2 mb-3 w-full sm:w-full con-inp">
+                </div>
+            </div>
+            <div>
+                <input type="email" name="mail" id="mail" placeholder="Enter Your Email Address" class="border border-black rounded p-2 mb-3 w-full con-inp">
+            </div>
+            <div>
+                <textarea name="msg" id="msg" placeholder="Enter Your Message" class="border border-black rounded p-2 mb-3 h-28 w-full xl:h-48 con-inp"></textarea>
+            </div>
+            <div>
+                <button type="submit" class="hover:text-black hover:bg-white border border-black rounded-md px-4 py-2 bg-black text-white">Send Message</button>
+            </div>
+        </form>
+    </div>
+    <!-- footer  -->
+    <div class="mt-40">
+        <div class="m-20 flex justify-evenly">
+            <div><img src="image/logo1.png" alt="TheSubMish Logo" class="w-48"></div>
+            <div>
+                <div><h1 class="font-bold text-xl">Socials</h1></div>
+                <div>
+                    <ul><li class="my-1 w-max flex place-items-center py-1"><img src="image/facebook.jpg" alt="Facbook Logo" class="w-5 mr-2"><a>Facebook</a></li>
+                        <li class="my-1 w-max flex place-items-center py-1"><img src="image/instagram.jpg" alt="Facbook Logo" class="w-5 mr-2"><a>Instagram</a></li>
+                        <li class="my-1 w-max flex place-items-center py-1"><img src="image/twitter.jpg" alt="Facbook Logo" class="w-5 mr-2"><a>Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div><h1 class="font-bold text-xl">Quick Links</h1></div>
+                <div>
+                    <ul>
+                        <li class="my-1 w-max flex place-items-center py-1"><span class="material-symbols-outlined pr-1">home</span><a href="index.html"> Home</a></li>
+                        <li class="my-1 w-max flex place-items-center py-1"><span class="material-symbols-outlined pr-1">contact_page</span><a href="contact.html"> Contact</a></li>
+                        <li class="my-1 w-max flex place-items-center py-1"><span class="material-symbols-outlined pr-1">group_add</span><a href="join.html"> Join Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div><h1 class="font-bold text-xl">Team</h1></div>
+                <div>
+                    <ul>
+                        <li class="my-1 w-max flex place-items-center py-1"><span class="material-symbols-outlined pr-1">groups</span><a href="team1.html">Team 1</a></li>
+                        <li class="my-1 w-max flex place-items-center py-1"><span class="material-symbols-outlined pr-1">groups_3</span><a href="team2.html">Team 2</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
