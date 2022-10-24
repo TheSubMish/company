@@ -9,7 +9,6 @@
 
 .nav-link div ul {
     display: none;
-    position: absolute;
 }
 
 .nav-link div:hover ul {
@@ -126,4 +125,22 @@
 .hove:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+@media (max-width: 639px) {
+    #menu-items {
+        position: fixed;
+        top: 65px;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+    }
+    #menu-items div {
+        text-align: center;
+        padding-top: 20px;
+    }
+    #menu-items div ul li {
+        padding-top: 10px;
+    }
 }
