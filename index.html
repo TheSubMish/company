@@ -18,19 +18,19 @@
             <a href="#home" class="text-2xl sm:text-3xl xl:text-4xl font-bold logo-font">TheSubMish.io</a>
         </div>
         <div>
-            <div class="sm:hidden my-1" id="menu"><span class="material-symbols-outlined">menu</span></div>
+            <div class="sm:hidden my-1" id="menu" onclick="menu()"><span class="material-symbols-outlined">menu</span></div>
             <div class="hidden sm:flex nav-link" id="menu-items">
-                <div class="mx-3 xl:mx-6"><a href="#home" class="text-xl font-bold hove text-gray-500">Home</a></div>
-                <div class="mx-3 xl:mx-6"><a href="#about" class="text-xl font-bold hove">About</a></div>
-                <div class="mx-3 xl:mx-6"><a href="#project" class="text-xl font-bold hove">Projects</a>
-                    <ul>
-                        <li class="text-xl font-bold py-1"><a href="#project" class="hove">Calculator</a></li>
-                        <li class="text-xl font-bold py-1"><a href="#project" class="hove">Vaccine RS</a></li>
-                        <li class="text-lg font-bold py-1"><a href="#project" class="text-blue-500 hover:text-black">More...</a></li>
+                <div class="mx-3 xl:mx-6" onclick="hide()"><a href="#home" class="text-xl font-bold hove text-gray-500">Home</a></div>
+                <div class="mx-3 xl:mx-6" onclick="hide()"><a href="#about" class="text-xl font-bold hove">About</a></div>
+                <div class="mx-3 xl:mx-6"><a href="#" class="text-xl font-bold hove">Projects</a>
+                    <ul class="relative sm:absolute">
+                        <li class="text-xl font-bold py-1" onclick="hide()"><a href="#project" class="hove">Calculator</a></li>
+                        <li class="text-xl font-bold py-1" onclick="hide()"><a href="#project" class="hove">Vaccine RS</a></li>
+                        <li class="text-lg font-bold py-1" onclick="hide()"><a href="#project" class="text-blue-500 hover:text-black">More...</a></li>
                     </ul>
                 </div>
-                <div class="mx-3 xl:mx-6"><a href="#contact" class="text-xl font-bold hove">Contact Us</a></div>
-                <div class="mx-3 xl:mx-6"><a href="sign.html" class="text-xl font-bold hove">Join Us</a></div>
+                <div class="mx-3 xl:mx-6" onclick="hide()"><a href="#contact" class="text-xl font-bold hove">Contact Us</a></div>
+                <div class="mx-3 xl:mx-6" onclick="hide()"><a href="sign.html" class="text-xl font-bold hove">Join Us</a></div>
             </div>
         </div>
     </div>
@@ -39,7 +39,7 @@
     <!-- HOME  -->
     <div class="sm:py-20" id="home">
         <div class="sm:flex justify-between">
-            <div class="my-16 lg:mx-16 xl:mx-32">
+            <div class="py-16 lg:mx-16 xl:mx-32">
                 <div class="">
                     <h1 class="px-10 text-2xl text-gray-500 font-bold xl:hidden">Elegant And</h1>
                     <h1 class="px-10 text-2xl text-gray-500 font-bold xl:hidden">Creative Solutions</h1>
@@ -166,20 +166,21 @@
                 </div>
                 <div>
                     <ul>
-                        <li class="my-1 w-max flex place-items-center py-1"><span class="material-symbols-outlined pr-1">home</span><a href="index.html"> Home</a></li>
-                        <li class="my-1 w-max flex place-items-center py-1"><span class="material-symbols-outlined pr-1">contact_page</span><a href="contact.html"> Contact</a></li>
+                        <li class="my-1 w-max flex place-items-center py-1"><span class="material-symbols-outlined pr-1">home</span><a href="#home"> Home</a></li>
+                        <li class="my-1 w-max flex place-items-center py-1"><span class="material-symbols-outlined pr-1">contact_page</span><a href="#contact"> Contact</a></li>
                         <li class="my-1 w-max flex place-items-center py-1"><span class="material-symbols-outlined pr-1">group_add</span><a href="join.html"> Join Us</a></li>
                     </ul>
                 </div>
             </div>
             <div>
                 <div>
-                    <h1 class="font-bold text-xl">Team</h1>
+                    <h1 class="font-bold text-xl">Projects</h1>
                 </div>
                 <div>
                     <ul>
-                        <li class="my-1 w-max flex place-items-center py-1"><span class="material-symbols-outlined pr-1">groups</span><a href="team1.html">Team 1</a></li>
-                        <li class="my-1 w-max flex place-items-center py-1"><span class="material-symbols-outlined pr-1">groups_3</span><a href="team2.html">Team 2</a></li>
+                        <li class="my-1 w-max flex place-items-center py-1"><span class="material-symbols-outlined pr-1">groups</span><a href="team1.html">Calculator</a></li>
+                        <li class="my-1 w-max flex place-items-center py-1"><span class="material-symbols-outlined pr-1">groups_3</span><a href="team2.html">Vaccine RS</a></li>
+                        <li class="my-1 w-max flex place-items-center py-1"><span class="material-symbols-outlined pr-1">groups_3</span><a href="team2.html">More...</a></li>
                     </ul>
                 </div>
             </div>
