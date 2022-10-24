@@ -13,41 +13,140 @@
 
 <body>
     <!-- nav-bar -->
-    <div class="flex justify-between py-6 mx-20">
-        <div class="mx-20">
-            <a href="index.html" class="text-4xl font-bold logo-font">TheSubMish.io</a>
-        </div>
-        <div class="flex mx-20 nav-link">
-            <div class="mx-6"><a href="index.html" class="text-xl font-bold hove text-gray-500">Home</a></div>
-            <div class="mx-6"><a href="about.html" class="text-xl font-bold hove">About</a></div>
-            <div class="mx-6"><a href="#" class="text-xl font-bold hove">Team</a>
-                <ul>
-                    <li class="text-xl font-bold py-1"><a href="team1.html" class="hove">Team 1</a></li>
-                    <li class="text-xl font-bold py-1"><a href="team2.html" class="hove">Team 2</a></li>
-                </ul>
-            </div>
-            <div class="mx-6"><a href="contact.html" class="text-xl font-bold hove">Contact</a></div>
-            <div class="mx-6"><a href="sign.html" class="text-xl font-bold hove">Join Us</a></div>
-        </div>
-    </div>
-    <!-- main body  -->
-    <div class="flex justify-between mx-20 my-40" id="about">
-        <div class="m-20">
-            <div>
-                <h1 class="text-4xl text-gray-500 font-bold">Elegant and creative solutions</h1>
-            </div>
-            <div class="my-2 pr-28">
-                <p>Website designers and developer team</p>
-            </div>
-            <div class="my-12"><a href="contact.html" class="text-black border border-black rounded-md px-4 py-2 hover:bg-black hover:text-white">Contact Us</a></div>
+    <div class="flex sticky top-0 bg-white justify-between px-10 lg:px-24 xl:px-40 pt-7 lg:pt-10">
+        <div>
+            <a href="#home" class="text-2xl sm:text-3xl xl:text-4xl font-bold logo-font">TheSubMish.io</a>
         </div>
         <div>
-            <img src="image/hero-img.png" alt="image" class="h-2/3">
+            <div class="sm:hidden my-1" id="menu"><span class="material-symbols-outlined">menu</span></div>
+            <div class="hidden sm:flex nav-link" id="menu-items">
+                <div class="mx-3 xl:mx-6"><a href="#home" class="text-xl font-bold hove text-gray-500">Home</a></div>
+                <div class="mx-3 xl:mx-6"><a href="#about" class="text-xl font-bold hove">About</a></div>
+                <div class="mx-3 xl:mx-6"><a href="#project" class="text-xl font-bold hove">Projects</a>
+                    <ul>
+                        <li class="text-xl font-bold py-1"><a href="team1.html" class="hove">Calculator</a></li>
+                        <li class="text-xl font-bold py-1"><a href="team2.html" class="hove">Vaccine RS</a></li>
+                        <li class="text-lg font-bold py-1"><a href="#project" class="text-blue-500 hover:text-black">More...</a></li>
+                    </ul>
+                </div>
+                <div class="mx-3 xl:mx-6"><a href="#contact" class="text-xl font-bold hove">Contact Us</a></div>
+                <div class="mx-3 xl:mx-6"><a href="sign.html" class="text-xl font-bold hove">Join Us</a></div>
+            </div>
         </div>
     </div>
-    <!-- footer  -->
-    <div class="">
-        <div class="m-20 flex justify-evenly">
+
+
+    <!-- HOME  -->
+    <div class="sm:py-20" id="home">
+        <div class="sm:flex justify-between">
+            <div class="my-16 lg:mx-16 xl:mx-32">
+                <div class="">
+                    <h1 class="px-10 text-2xl text-gray-500 font-bold xl:hidden">Elegant And</h1>
+                    <h1 class="px-10 text-2xl text-gray-500 font-bold xl:hidden">Creative Solutions</h1>
+                    <h1 class="hidden px-10 text-gray-500 font-bold text-4xl xl:block">Elegant And Creative Solutions</h1>
+                </div>
+                <div class="my-2">
+                    <p class="px-10">Web Designer and Developer</p>
+                </div>
+                <div class="my-8 mx-10">
+                    <a href="contact.html" class="text-black border border-black rounded-md px-4 py-2 hover:bg-black hover:text-white">Contact Us</a>
+                </div>
+            </div>
+            <div>
+                <img src="image/about.png" alt="image" class="w-60 mx-10 my-5 sm:w-80 xl:w-2/3 mr-20 lg:mr-24 xl:mr-44">
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="pt-24 lg:px-16 xl:px-32" id="about">
+        <div class="sm:flex justify-between sm:my-20">
+            <div class="mb-10">
+                <div>
+                    <h1 class="px-10 text-3xl text-gray-500 font-bold">About Us</h1>
+                </div>
+                <div class="py-3 px-10 text-justify sm:pr-14">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo accusantium eius facere iusto suscipit aspernatur.</p>
+                </div>
+            </div>
+            <div>
+                <img src="image/xabout_1.png.pagespeed.ic.yMAKdfftzM.webp" alt="About Us" class="px-14">
+            </div>
+        </div>
+        <div class="mt-20 xl:grid xl:grid-cols-2">
+            <div class="my-7">
+                <div>
+                    <h1 class="px-10 text-3xl text-gray-500 font-bold ">Web Designer</h1>
+                </div>
+                <div class="py-3 px-10 text-justify sm:pr-20">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur eligendi, a dolorum libero eius unde magnam minus nam eaque quos vero veniam dolorem! Laborum, totam id quo nisi aliquam dolorem.</p>
+                </div>
+            </div>
+            <div class="my-7">
+                <div>
+                    <h1 class="px-10 text-3xl text-gray-500 font-bold ">Web Developer</h1>
+                </div>
+                <div class="py-3 px-10 text-justify sm:pr-20">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur eligendi, a dolorum libero eius unde magnam minus nam eaque quos vero veniam dolorem! Laborum, totam id quo nisi aliquam dolorem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT -->
+    <div class="pt-24 lg:px-16 xl:px-32" id="project">
+        <div>
+            <h1 class="px-10 text-3xl text-gray-500 font-bold">Projects</h1>
+        </div>
+        <div class="py-3 px-10 text-justify sm:pr-20">
+            <p>Coming Soon</p>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div id="contact" class="pt-40 lg:px-16 xl:px-32">
+        <div class="sm:flex">
+            <div class="mb-10">
+                <div>
+                    <h1 class="px-10 text-2xl sm:text-3xl text-gray-500 font-bold">Get In Touch</h1>
+                </div>
+                <div class="py-3 px-10 text-justify sm:pr-14 xl:pr-32">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat similique veniam aspernatur unde beatae est eaque quasi a id minima!</p>
+                </div>
+            </div>
+            <div>
+                <img src="image/hero-img.png" alt="image" class=" px-14">
+            </div>
+        </div>
+        <div class="p-10 xl:mx-40 xl:pt-20">
+            <div class="py-5">
+                <h1 class="text-2xl sm:text-3xl text-gray-500 font-bold">Let's have a talk</h1>
+            </div>
+            <form action="#" method="post" onsubmit="return conValid()">
+                <div class="flex">
+                    <div class="mr-4 flex-auto">
+                        <input type="text" name="fname" id="fname" placeholder="First Name" class="border border-black rounded p-2 mb-3 w-full sm:w-full con-inp">
+                    </div>
+                    <div class="flex-auto">
+                        <input type="text" name="lname" id="lname" placeholder="Last Name" class="border border-black rounded p-2 mb-3 w-full sm:w-full con-inp">
+                    </div>
+                </div>
+                <div>
+                    <input type="email" name="mail" id="mail" placeholder="Enter Your Email Address" class="border border-black rounded p-2 mb-3 w-full con-inp">
+                </div>
+                <div>
+                    <textarea name="msg" id="msg" placeholder="Enter Your Message" class="border border-black rounded p-2 mb-3 h-28 w-full xl:h-48 con-inp"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="hover:text-black hover:bg-white border border-black rounded-md px-4 py-2 bg-black text-white">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- FOOTER  -->
+    <div class="hidden mt-40 sm:block">
+        <div class="my-20 flex justify-evenly">
             <div><img src="image/logo1.png" alt="TheSubMish Logo" class="w-48"></div>
             <div>
                 <div>
@@ -86,7 +185,7 @@
             </div>
         </div>
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/script.js "></script>
 </body>
 
 </html>
