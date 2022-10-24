@@ -1,43 +1,4 @@
-//Sign-Up Validation
-var fname = document.getElementById('fname').value;
-var lname = document.getElementById('lname').value;
-var user = document.getElementById('username').value;
-var email = document.getElementById('eamil').value;
-var npassword = document.getElementById('npassword').value;
-var cpassword = document.getElementById('cpassword').value;
-
-function signValid() {
-
-    if ((fname == '' || fname == null) && (lname == '' || lname == null) && (user == '' || user == null) && (email == '' || email == null) && (npassword == '' || npassword == null) && (cpassword == '' || cpassword == null)) {
-        alert('All fields are required');
-        return false;
-    } else if (fname == '' || fname == null) {
-        alert('First Name field is required');
-        return false;
-    } else if (lname == '' || lname == null) {
-        alert('Last Name field is required');
-        return false;
-    } else if (user == '' || user == null) {
-        alert('Username field is required');
-        return false;
-    } else if (email == '' || email == null) {
-        alert('Email field is required');
-        return false;
-    } else if (npassword == '' || npassword == null) {
-        alert('Password field is required');
-        return false;
-    } else if (cpassword == '' || cpassword == null) {
-        alert('Confirm Password field is required');
-        return false;
-    } else if (npassword != cpassword) {
-        alert('Password do not match');
-        return false;
-    } else {
-        return true;
-    }
-}
-
-//Login Validation
+//Log-In Validation
 function logvalid() {
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
@@ -57,6 +18,66 @@ function logvalid() {
     if (username == password) {
         alert('Both fields cannot be same');
         return false;
+    }
+}
+
+// Sign-Up validation
+function signUpValid() {
+    var fname = document.getElementById('fname').value;
+    var lname = document.getElementById('lname').value;
+    var username = document.getElementById('username').value;
+    var email = document.getElementById('email').value;
+    var npassword = document.getElementById('npassword').value;
+    var cpassword = document.getElementById('cpassword').value;
+
+    if ((fname == ' ' || fname == null) && (lname == ' ' || lname == null) && (user == ' ' || username == null) && (email == ' ' || email == null) && (npassword == ' ' || npassword == null) && (cpassword == ' ' || cpassword == null)) {
+        alert('All Fields Are Required');
+        return false;
+    }
+    if (fname == ' ' || fname == null) {
+        alert('First Name Field is required');
+        return false;
+    }
+    if (lname == ' ' || lname == null) {
+        alert('Last Name Field is required');
+        return false;
+    }
+    if (username == ' ' || username == null) {
+        alert('Username Field is required');
+        return false;
+    }
+    if (email == ' ' || email == null) {
+        alert('Last Name Field is required');
+        return false;
+    }
+    if (npassword == ' ' || npassword == null) {
+        alert('Password Field is required');
+        return false;
+    }
+    if (cpassword == ' ' || cpassword == null) {
+        alert('Confirm Password Field is required');
+        return false;
+    }
+    if (npassword != cpassword) {
+        alert('Password Does Not Match');
+        return false;
+    }
+}
+
+// Menu Bar
+const menuItems = document.getElementById('menu-items');
+
+function menu() {
+    if (menuItems.style.display == 'none') {
+        menuItems.style.display = 'block';
+    } else {
+        menuItems.style.display = 'none';
+    }
+}
+
+function hide() {
+    if (menuItems.style.display == 'block') {
+        menuItems.style.display = 'none';
     }
 }
 
