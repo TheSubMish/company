@@ -138,9 +138,9 @@
     }
     #menu-items div {
         text-align: center;
-        padding-top: 20px;
+        padding: 20px 0;
     }
     #menu-items div ul li {
-        padding-top: 10px;
+        padding: 20px;
     }
 }
