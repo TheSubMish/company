@@ -3,21 +3,57 @@
     font-family: 'Kaushan Script', cursive;
 }
 
+
+/* LOGO */
+
+.logo {
+    width: 300px;
+}
+
 .log-bg {
     background-color: #f2f5f5;
 }
 
+
+/* NAVBAR */
+
 .nav-link div ul {
     display: none;
+    /* position: absolute; */
 }
 
 .nav-link div:hover ul {
     display: block;
 }
 
-.logo {
-    width: 300px;
+
+/* NAVBAR LINK ANIMATION */
+
+.hove {
+    display: inline-block;
+    position: relative;
 }
+
+.hove:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hove:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+/* LOGIN PAGE */
 
 .log-in {
     display: flex;
@@ -87,6 +123,9 @@
     margin: 2px;
 }
 
+
+/* SIGN UP */
+
 .sign-up {
     width: 150px;
     padding: 5px 50px;
@@ -100,32 +139,21 @@
     background-color: red;
 }
 
-.nth:nth-child(even) {
-    background-color: #ececec;
+
+/* TABLE */
+
+#bill-table tr td {
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
 }
 
-.hove {
-    display: inline-block;
-    position: relative;
+#bill-table tr:nth-child(even) {
+    background-color: #f2f5f5;
 }
 
-.hove:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #000;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
 
-.hove:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
+/* NAVBAR RESPONSIVE  */
 
 @media (max-width: 639px) {
     #menu-items {
