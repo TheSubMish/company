@@ -20,17 +20,17 @@
         <div>
             <div class="sm:hidden my-1" id="menu" onclick="menu()"><span class="material-symbols-outlined">menu</span></div>
             <div class="hidden sm:flex nav-link" id="menu-items">
-                <div class="mx-3 xl:mx-6" onclick="hide()"><a href="index.html#home" class="text-xl font-bold hove text-gray-500">Home</a></div>
-                <div class="mx-3 xl:mx-6" onclick="hide()"><a href="index.html#about" class="text-xl font-bold hove">About</a></div>
+                <div class="mx-3 xl:mx-6" onclick="hide()"><a href="/index.html#home" class="text-xl font-bold hove text-gray-500">Home</a></div>
+                <div class="mx-3 xl:mx-6" onclick="hide()"><a href="/index.html#about" class="text-xl font-bold hove">About</a></div>
                 <div class="mx-3 xl:mx-6"><a href="#" class="text-xl font-bold hove">Projects</a>
                     <ul class="relative sm:absolute">
                         <li class="text-xl font-bold py-1" onclick="hide()"><a href="bill.html" class="hove">Billing System</a></li>
-                        <li class="text-xl font-bold py-1" onclick="hide()"><a href="index.html#project" class="hove">Vaccine RS</a></li>
-                        <li class="text-lg font-bold py-1" onclick="hide()"><a href="index.html#project" class="text-blue-500 hover:text-black">More...</a></li>
+                        <li class="text-xl font-bold py-1" onclick="hide()"><a href="/index.html#project" class="hove">Vaccine RS</a></li>
+                        <li class="text-lg font-bold py-1" onclick="hide()"><a href="/index.html#project" class="text-blue-500 hover:text-black">More...</a></li>
                     </ul>
                 </div>
-                <div class="mx-3 xl:mx-6" onclick="hide()"><a href="index.html#contact" class="text-xl font-bold hove">Contact Us</a></div>
-                <div class="mx-3 xl:mx-6" onclick="hide()"><a href="sign.html" class="text-xl font-bold hove">Join Us</a></div>
+                <div class="mx-3 xl:mx-6" onclick="hide()"><a href="/index.html#contact" class="text-xl font-bold hove">Contact Us</a></div>
+                <div class="mx-3 xl:mx-6" onclick="hide()"><a href="/sign.html" class="text-xl font-bold hove">Join Us</a></div>
             </div>
         </div>
     </div>
@@ -42,18 +42,18 @@
                 <h1 class="px-10 text-2xl text-gray-500 font-bold">Item Details:</h1>
             </div>
             <div class="px-10">
-                <form action="">
-                    <div>
+                <form id="billForm">
+                    <fieldset>
                         <input type="text" name="item" id="item" placeholder="Item Name" class="border border-black rounded p-2 mb-3 w-full con-inp">
-                    </div>
-                    <div class="flex">
+                    </fieldset>
+                    <fieldset class="flex">
                         <input type="number" name="quantity" id="quantity" placeholder="Quantity" class="border border-black rounded p-2 mb-3 w-full con-inp">
                         <input type="number" name="rate" id="rate" placeholder="Rate" class="border border-black rounded p-2 mb-3 w-full con-inp ml-3">
-                    </div>
-                    <!-- <div> -->
-                    <input type="submit" class="hover:text-black hover:bg-white border border-black rounded-md px-4 py-2 bg-black text-white" id="submit" value="Submit">
-                    <button type="reset" class="text-black bg-white border border-black rounded-md px-4 py-2 hover:bg-black hover:text-white">Clear</button>
-                    <!-- </div> -->
+                    </fieldset>
+                    <fieldset>
+                        <input type="button" class="hover:text-black hover:bg-white border border-black rounded-md px-4 py-2 bg-black text-white" id="submit" value="Submit">
+                        <button type="reset" class="text-black bg-white border border-black rounded-md px-4 py-2 hover:bg-black hover:text-white">Clear</button>
+                    </fieldset>
                 </form>
             </div>
         </div>
@@ -64,11 +64,11 @@
             <div>
                 <table id="bill-table">
                     <tr>
-                        <td class="text-white bg-black">S.N.</td>
-                        <td class="text-white bg-black w-full">Item</td>
-                        <td class="text-white bg-black">Qty</td>
-                        <td class="text-white bg-black">Rate</td>
-                        <td class="text-white bg-black">Amount</td>
+                        <th class="text-white bg-black">S.N.</th>
+                        <th class="text-white bg-black w-full">Item</th>
+                        <th class="text-white bg-black">Qty</th>
+                        <th class="text-white bg-black">Rate</th>
+                        <th class="text-white bg-black">Amount</th>
                     </tr>
                 </table>
             </div>
