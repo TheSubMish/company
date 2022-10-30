@@ -142,8 +142,12 @@
 
 /* TABLE */
 
+#bill-table tr th {
+    border: 1px solid black;
+    padding: 5px;
+}
+
 #bill-table tr td {
-    text-align: center;
     border: 1px solid black;
     padding: 5px;
 }
