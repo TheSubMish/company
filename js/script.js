@@ -108,3 +108,33 @@ function conValid() {
         return false;
     }
 }
+
+//Change navbar on scroll
+function changeColor() {
+    // var scrollValue = window.scrollY;
+    var scroll = window.scrollY;
+    if (scroll <= 650) {
+        document.getElementById('home').style.color = '#b8b6b2';
+        document.getElementById('about').style.color = 'black';
+        document.getElementById('project').style.color = 'black';
+        document.getElementById('contact').style.color = 'black';
+    } else if (scroll >= 650 && scroll <= 1450) {
+        document.getElementById('home').style.color = 'black';
+        document.getElementById('about').style.color = '#b8b6b2';
+        document.getElementById('project').style.color = 'black';
+        document.getElementById('contact').style.color = 'black';
+    } else if (scroll > 1450 && scroll <= 1650) {
+        document.getElementById('home').style.color = 'black';
+        document.getElementById('about').style.color = 'black';
+        document.getElementById('project').style.color = '#b8b6b2';
+        document.getElementById('contact').style.color = 'black';
+    } else {
+        document.getElementById('home').style.color = 'black';
+        document.getElementById('about').style.color = 'black';
+        document.getElementById('project').style.color = 'black';
+        document.getElementById('contact').style.color = '#b8b6b2';
+    }
+    // console.log(scrollValue);
+}
+
+window.addEventListener('scroll', changeColor);
