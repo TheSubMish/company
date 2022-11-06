@@ -1,13 +1,13 @@
 //Log-In Validation
 function logvalid() {
-    var username = document.getElementById('username').value;
-    var password = document.getElementById('password').value;
+    const user = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
 
-    if ((username == '' || username == null) && (password == '' || password == null)) {
+    if ((user == '' || user == null) && (password == '' || password == null)) {
         alert('Both field are required');
         return false;
     }
-    if (username == '' || username == null) {
+    if (user == '' || user == null) {
         alert('Username field is required');
         return false;
     }
@@ -23,61 +23,46 @@ function logvalid() {
 
 // Sign-Up validation
 function signUpValid() {
-    var fname = document.getElementById('fname').value;
-    var lname = document.getElementById('lname').value;
-    var username = document.getElementById('username').value;
-    var email = document.getElementById('email').value;
-    var npassword = document.getElementById('npassword').value;
-    var cpassword = document.getElementById('cpassword').value;
+    const fname = document.getElementById("fname").value;
+    const lname = document.getElementById("lname").value;
+    const username = document.getElementById("username").value;
+    const email = document.getElementById("email").value;
+    const npassword = document.getElementById("npassword").value;
+    const cpassword = document.getElementById("cpassword").value;
 
-    if ((fname == ' ' || fname == null) && (lname == ' ' || lname == null) && (user == ' ' || username == null) && (email == ' ' || email == null) && (npassword == ' ' || npassword == null) && (cpassword == ' ' || cpassword == null)) {
+    console.log(fname);
+
+    if ((fname == "" || fname == null) && (lname == "" || lname == null) && (username == "" || username == null) && (email == "" || email == null) && (npassword == "" || npassword == null) && (cpassword == "" || cpassword == null)) {
         alert('All Fields Are Required');
         return false;
     }
-    if (fname == ' ' || fname == null) {
+    if (fname == "" || fname == null) {
         alert('First Name Field is required');
         return false;
     }
-    if (lname == ' ' || lname == null) {
+    if (lname == "" || lname == null) {
         alert('Last Name Field is required');
         return false;
     }
-    if (username == ' ' || username == null) {
+    if (username == "" || username == null) {
         alert('Username Field is required');
         return false;
     }
-    if (email == ' ' || email == null) {
+    if (email == "" || email == null) {
         alert('Last Name Field is required');
         return false;
     }
-    if (npassword == ' ' || npassword == null) {
+    if (npassword == "" || npassword == null) {
         alert('Password Field is required');
         return false;
     }
-    if (cpassword == ' ' || cpassword == null) {
+    if (cpassword == "" || cpassword == null) {
         alert('Confirm Password Field is required');
         return false;
     }
     if (npassword != cpassword) {
         alert('Password Does Not Match');
         return false;
-    }
-}
-
-// Menu Bar
-const menuItems = document.getElementById('menu-items');
-
-function menu() {
-    if (menuItems.style.display == 'none') {
-        menuItems.style.display = 'block';
-    } else {
-        menuItems.style.display = 'none';
-    }
-}
-
-function hide() {
-    if (menuItems.style.display == 'block') {
-        menuItems.style.display = 'none';
     }
 }
 
@@ -109,7 +94,24 @@ function conValid() {
     }
 }
 
-//Change navbar on scroll
+// Menu Bar
+const menuItems = document.getElementById('menu-items');
+
+function menu() {
+    if (menuItems.style.display == 'none') {
+        menuItems.style.display = 'block';
+    } else {
+        menuItems.style.display = 'none';
+    }
+}
+
+function hide() {
+    if (menuItems.style.display == 'block') {
+        menuItems.style.display = 'none';
+    }
+}
+
+// Change navbar on scroll
 function changeColor() {
     // var scrollValue = window.scrollY;
     var scroll = window.scrollY;
@@ -123,7 +125,7 @@ function changeColor() {
         document.getElementById('about').style.color = '#b8b6b2';
         document.getElementById('project').style.color = 'black';
         document.getElementById('contact').style.color = 'black';
-    } else if (scroll > 1450 && scroll <= 1650) {
+    } else if (scroll > 1450 && scroll <= 1600) {
         document.getElementById('home').style.color = 'black';
         document.getElementById('about').style.color = 'black';
         document.getElementById('project').style.color = '#b8b6b2';
@@ -138,3 +140,5 @@ function changeColor() {
 }
 
 window.addEventListener('scroll', changeColor);
+
+// PROJECTS
