@@ -20,16 +20,16 @@
         <div>
             <div class="sm:hidden my-1" id="menu" onclick="menu()"><span class="material-symbols-outlined">menu</span></div>
             <div class="hidden sm:flex nav-link" id="menu-items">
-                <div class="mx-3 xl:mx-6" onclick="hide()"><a href="#home" class="text-xl font-bold hove text-gray-400">Home</a></div>
-                <div class="mx-3 xl:mx-6" onclick="hide()"><a href="#about" class="text-xl font-bold hove">About</a></div>
-                <div class="mx-3 xl:mx-6"><a class="text-xl font-bold hove">Projects</a>
+                <div class="mx-3 xl:mx-6" onclick="hide()"><a href="#home" class="text-xl font-bold hove text-gray-400" id="nav-home">Home</a></div>
+                <div class="mx-3 xl:mx-6" onclick="hide()"><a href="#about" class="text-xl font-bold hove" id="nav-about">About</a></div>
+                <div class="mx-3 xl:mx-6"><a class="text-xl font-bold hove" id="nav-project">Projects</a>
                     <ul class="relative sm:absolute">
                         <li class="text-xl font-bold py-1" onclick="hide()"><a href="bill.html" class="hove">Billing System</a></li>
                         <li class="text-xl font-bold py-1" onclick="hide()"><a href="calculator.html" class="hove">Calculator</a></li>
                         <li class="text-lg font-bold py-1" onclick="hide()"><a href="#project" class="text-blue-500 hover:text-black">More...</a></li>
                     </ul>
                 </div>
-                <div class="mx-3 xl:mx-6" onclick="hide()"><a href="#contact" class="text-xl font-bold hove">Contact Us</a></div>
+                <div class="mx-3 xl:mx-6" onclick="hide()"><a href="#contact" class="text-xl font-bold hove" id="nav-contact">Contact Us</a></div>
                 <div class="mx-3 xl:mx-6" onclick="hide()"><a href="sign.html" class="text-xl font-bold hove">Join Us</a></div>
             </div>
         </div>
@@ -100,13 +100,27 @@
         </div>
         <div class="py-3 px-10 text-justify sm:pr-20">
             <div class="flex justify-evenly mt-10">
-                <div class="border-2 border-black w-96 h-28 sm:w-60 sm:h-60 mr-4">
-                    <img src="image/bill calculator.png" alt="Bill Calculator" id="bill-calculator">
-                    <div class="text-center my-10 sm:my-24 sm:text-xl font-bold underline text-blue-300 hidden" project-item><a href="bill.html" target="_blank">Visit</a></div>
+                <div class="border-2 border-black w-96 h-28 sm:w-60 sm:h-60 mr-4 flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="image/bill calculator.png" alt="Bill Calculator" id="bill-calculator">
+                        </div>
+                        <div class="text-center flip-card-back">
+                            <p class="text-xl sm:text-2xl font-bold my-2">Billing System</p>
+                            <a href="bill.html" target="_blank" class="sm:text-xl font-bold underline text-blue-400">Visit</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="border-2 border-black w-96 h-28 sm:w-60 sm:h-60">
-                    <img src="image/calculator.png" alt="Calculator" id="calculator">
-                    <div class="text-center my-10 sm:my-24 sm:text-xl font-bold underline text-blue-300 hidden" project-item><a href="calculator.html" target="_blank">Visit</a></div>
+                <div class="border-2 border-black w-96 h-28 sm:w-60 sm:h-60 mr-4 flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="image/calculator.png" alt="Calculator" id="calculator">
+                        </div>
+                        <div class="text-center flip-card-back">
+                            <p class="text-xl sm:text-2xl font-bold my-2">Calculator</p>
+                            <a href="calculator.html" target="_blank" class="sm:text-xl font-bold underline text-blue-400">Visit</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
