@@ -183,7 +183,6 @@
 }
 
 .flip-card-back {
-    padding-top: 60px;
     background-color: #dad8d8;
     color: black;
     transform: rotateY(180deg);
