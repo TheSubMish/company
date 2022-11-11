@@ -100,8 +100,14 @@ const menuItems = document.getElementById('menu-items');
 function menu() {
     if (menuItems.style.display == 'none') {
         menuItems.style.display = 'block';
+        document.querySelectorAll("[flip-card]").forEach(flip => {
+            flip.style.display = "none";
+        })
     } else {
         menuItems.style.display = 'none';
+        document.querySelectorAll("[flip-card]").forEach(flip => {
+            flip.style.display = "block";
+        })
     }
 }
 
@@ -116,29 +122,27 @@ function changeColor() {
     // var scrollValue = window.scrollY;
     var scroll = window.scrollY;
     if (scroll <= 650) {
-        document.getElementById('home').style.color = '#b8b6b2';
-        document.getElementById('about').style.color = 'black';
-        document.getElementById('project').style.color = 'black';
-        document.getElementById('contact').style.color = 'black';
+        document.getElementById('nav-home').style.color = '#b8b6b2';
+        document.getElementById('nav-about').style.color = 'black';
+        document.getElementById('nav-project').style.color = 'black';
+        document.getElementById('nav-contact').style.color = 'black';
     } else if (scroll >= 650 && scroll <= 1450) {
-        document.getElementById('home').style.color = 'black';
-        document.getElementById('about').style.color = '#b8b6b2';
-        document.getElementById('project').style.color = 'black';
-        document.getElementById('contact').style.color = 'black';
+        document.getElementById('nav-home').style.color = 'black';
+        document.getElementById('nav-about').style.color = '#b8b6b2';
+        document.getElementById('nav-project').style.color = 'black';
+        document.getElementById('nav-contact').style.color = 'black';
     } else if (scroll > 1450 && scroll <= 1600) {
-        document.getElementById('home').style.color = 'black';
-        document.getElementById('about').style.color = 'black';
-        document.getElementById('project').style.color = '#b8b6b2';
-        document.getElementById('contact').style.color = 'black';
+        document.getElementById('nav-home').style.color = 'black';
+        document.getElementById('nav-about').style.color = 'black';
+        document.getElementById('nav-project').style.color = '#b8b6b2';
+        document.getElementById('nav-contact').style.color = 'black';
     } else {
-        document.getElementById('home').style.color = 'black';
-        document.getElementById('about').style.color = 'black';
-        document.getElementById('project').style.color = 'black';
-        document.getElementById('contact').style.color = '#b8b6b2';
+        document.getElementById('nav-home').style.color = 'black';
+        document.getElementById('nav-about').style.color = 'black';
+        document.getElementById('nav-project').style.color = 'black';
+        document.getElementById('nav-contact').style.color = '#b8b6b2';
     }
     // console.log(scrollValue);
 }
 
 window.addEventListener('scroll', changeColor);
-
-// PROJECTS
