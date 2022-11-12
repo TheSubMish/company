@@ -98,22 +98,16 @@ function conValid() {
 const menuItems = document.getElementById('menu-items');
 
 function menu() {
-    if (menuItems.style.display == 'none') {
-        menuItems.style.display = 'block';
-        document.querySelectorAll("[flip-card]").forEach(flip => {
-            flip.style.display = "none";
-        })
+    if (menuItems.style.display == "none") {
+        menuItems.style.display = "block";
     } else {
-        menuItems.style.display = 'none';
-        document.querySelectorAll("[flip-card]").forEach(flip => {
-            flip.style.display = "block";
-        })
+        menuItems.style.display = "none";
     }
 }
 
 function hide() {
-    if (menuItems.style.display == 'block') {
-        menuItems.style.display = 'none';
+    if (menuItems.style.display == "block") {
+        menuItems.style.display = "none";
     }
 }
 
@@ -126,12 +120,12 @@ function changeColor() {
         document.getElementById('nav-about').style.color = 'black';
         document.getElementById('nav-project').style.color = 'black';
         document.getElementById('nav-contact').style.color = 'black';
-    } else if (scroll >= 650 && scroll <= 1450) {
+    } else if (scroll >= 650 && scroll <= 1300) {
         document.getElementById('nav-home').style.color = 'black';
         document.getElementById('nav-about').style.color = '#b8b6b2';
         document.getElementById('nav-project').style.color = 'black';
         document.getElementById('nav-contact').style.color = 'black';
-    } else if (scroll > 1450 && scroll <= 1600) {
+    } else if (scroll > 1300 && scroll <= 1600) {
         document.getElementById('nav-home').style.color = 'black';
         document.getElementById('nav-about').style.color = 'black';
         document.getElementById('nav-project').style.color = '#b8b6b2';
