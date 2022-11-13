@@ -34,8 +34,8 @@ formRate.addEventListener("keyup", function() {
 
 function changeColor() {
     if ((formItem.style.outline == "green solid 2px") && (formQty.style.outline == "green solid 2px") && (formRate.style.outline == "green solid 2px")) {
-        document.getElementById("submit").style.backgroundColor = "#afffd4";
-        document.getElementById("submit").style.color = "#000";
+        document.getElementById("submit").style.backgroundColor = "black";
+        document.getElementById("submit").style.color = "white";
     }
 }
 
@@ -48,11 +48,12 @@ document.getElementById("clear").onclick = function() {
     formRate.style.border = "1px solid #000";
     formRate.style.outline = "0px solid #000";
     document.getElementById("submit").style.backgroundColor = "#fff";
+    document.getElementById("submit").style.color = "black";
 }
 
 //  ADD DATA FROM FORM TO TABLE
 document.getElementById("submit").onclick = function() {
-    if (document.getElementById("submit").style.backgroundColor !== "rgb(175, 255, 212)") {
+    if (document.getElementById("submit").style.backgroundColor !== "black") {
         alert("Insert data properly");
     } else {
         var table = document.getElementById("bill-table");
@@ -62,16 +63,15 @@ document.getElementById("submit").onclick = function() {
         var qty = row.insertCell(2);
         var rate = row.insertCell(3);
         var amt = row.insertCell(4);
-
-        sn.innerHTML = 1;
+        sn.innerHTML;
         item.innerHTML = document.getElementById("item").value;
         qty.innerHTML = document.getElementById("quantity").value;
         rate.innerHTML = document.getElementById("rate").value;
         amt.innerHTML = qty.innerHTML * rate.innerHTML;
 
         // ADD TOTAL AMOUNT
-        var totAmt = parseInt(document.getElementById("totAmt").innerHTML);
-        totAmt += amt.innerHTML;
+        var totAmt = parseFloat(document.getElementById("totAmt").innerHTML);
+        totAmt += parseFloat(amt.innerHTML);
         document.getElementById("totAmt").innerHTML = totAmt;
         return false;
     }
