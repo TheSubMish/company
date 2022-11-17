@@ -40,6 +40,8 @@ function drumSound(key) {
             kickBass.play();
             break;
         default:
-            console.log(key);
+            var rick = new Audio("sound/rick.mp3");
+            rick.play();
+            break;
     }
 }
