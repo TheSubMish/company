@@ -36,8 +36,8 @@ function drumSound(key) {
             crash.play();
             break;
         case "l":
-            var kickBass = new Audio("sound/drum-roll.mp3");
-            kickBass.play();
+            var drumRoll = new Audio("sound/drum-roll.mp3");
+            drumRoll.play();
             break;
         default:
             var rick = new Audio("sound/rick.mp3");
