@@ -2,11 +2,13 @@ for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
     document.querySelectorAll(".drum")[i].addEventListener("click", function() {
         var buttonInnerHTML = this.innerHTML;
         drumSound(buttonInnerHTML);
+        buttonAnimation(buttonInnerHTML);
     })
 }
 
 document.addEventListener("keypress", function(event) {
     drumSound(event.key);
+    buttonAnimation(event.key);
 })
 
 function drumSound(key) {
@@ -44,4 +46,8 @@ function drumSound(key) {
             rick.play();
             break;
     }
+}
+
+function buttonAnimation(currentKeys) {
+    document.querySelector("." + currentKeys).setAttribute(".pressed");
 }
